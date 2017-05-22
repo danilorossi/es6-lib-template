@@ -4,14 +4,11 @@
   "description": "JavaScript ES6 library templat",
   "main": "dist/index.js",
   "scripts": {
-
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
-
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
     "build:umd": "webpack --output-filename index.umd.js",
     "build:umd.min": "webpack --output-filename index.umd.min.js -p",
-
     "lint": "eslint ./src",
     "test": "cross-env NODE_ENV=test nyc mocha",
     "watch:test": "mocha --watch",
@@ -22,12 +19,8 @@
   ],
   "author": "Danilo Rossi <contact@danilorossi.me> (http://danilorossi.me/)",
   "license": "MIT",
-  "dependencies": {
-
-  },
-  "peerDependencies": {
-
-  },
+  "dependencies": {},
+  "peerDependencies": {},
   "devDependencies": {
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
@@ -46,6 +39,7 @@
     "json-loader": "0.5.4",
     "mocha": "3.3.0",
     "npm-run-all": "4.0.2",
+    "nyc": "10.3.2",
     "rimraf": "2.6.1",
     "webpack": "2.5.1"
   },
