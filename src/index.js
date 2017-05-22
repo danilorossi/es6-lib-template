@@ -1,7 +1,8 @@
-//'use strict'; // not needed with Babel
-
 const data = require('./data.json')
 
+/**
+ * Just an example of public API
+*/
 const mainExport = { 
 
 	all: function() {
@@ -15,4 +16,6 @@ const mainExport = {
 }
 
 export default mainExport
-module.exports = mainExport // for CommonJS compatibility
+
+// for CommonJS compatibility
+module.exports = mainExport 

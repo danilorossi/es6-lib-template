@@ -26,7 +26,6 @@ function isArrayOfString(array) {
 
 function isIncludedIn(array) {
 	return function(item) {
-		//return array.include(item) //NOTE es6
 		return array.indexOf(item) >= 0
 	}
 }
