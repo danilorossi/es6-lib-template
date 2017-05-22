@@ -1,6 +1,6 @@
 {
   "name": "es6-lib-template",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "JavaScript ES6 library template",
   "main": "dist/index.js",
   "scripts": {
